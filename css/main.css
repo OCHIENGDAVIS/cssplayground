@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    height: 100%;
+}
+
+
+body{
+    background: rgb(250, 250, 250);
+    height: 100%;
+    font-family: sans-serif;
+    
+}
+.nav{
+    background: rgba(11, 131, 81, 0.603);
+    box-shadow: 0 0 15px ;
+}
+.nav-ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-ul li {
+    padding: 20px;
+    list-style-type: none;
+    font-size: 1.2em;
+    
+}
+.nav-ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-ul li a:hover{
+    background: rgba(12, 94, 60, 0.603);
+    padding: 10px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 436px){
+    .nav-ul{
+        flex-direction: column;
+    }
+}
+.call-to-action{
+    width: 100%;
+    background: rgba(12, 94, 60, 0.603);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.action-header{
+    color: white;
+    font-size: 2.5em;
+    margin: 20px;
+    font-weight: 900;
+}
+.action-text{
+    color: white;
+    margin: 20px;
+    font-size: 2em;
+}
+.action-btn{
+    margin: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: gray;
+    transition: all 300ms ease-in-out;
+    border-radius: 8px;
+}
+.action-btn:hover{
+    background: rgba(12, 94, 60, 0.603);
+    border: none;
+    color: white;
+}
+#action-text{
+    animation-name: action;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes action{
+    0%{color: white; transform: scale(1.5);}
+    25%{color: green; transform: scale(0.5);}
+    50%{color: yellow; transform: scale(1.5);}
+    75%{color: red; transform: scale(0.5);}
+    100%{color: black; transform: scale(1.5);}
+}
