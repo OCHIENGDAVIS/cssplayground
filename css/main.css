@@ -46,12 +46,14 @@ body{
 }
 .call-to-action{
     width: 100%;
-    background: rgba(12, 94, 60, 0.603);
+    background: url("../img/workstatio.jpg");
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0.8;
 }
+
 .action-header{
     color: white;
     font-size: 2.5em;
@@ -90,6 +92,9 @@ body{
     display: flex;
     justify-content: center;
     margin: 20px;
+}
+.quotes div{
+    height: auto;
 }
 .silver{
     width: 300px;
